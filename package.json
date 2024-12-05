@@ -16,6 +16,7 @@
   "author": "ITGIRLSCHOOL",
   "license": "ISC",
   "dependencies": {
-    "date-fns": "^4.1.0"
+    "date-fns": "^4.1.0",
+    "typed.js": "^2.1.0"
   }
 }

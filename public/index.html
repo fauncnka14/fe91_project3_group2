@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/css/title_page.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -31,11 +32,15 @@
           <div class="promo__offer--lable">
             Сайт-портфолио frontend-разработчицы
           </div>
-          <div class="promo__offer--title"><h1>Hello world!</h1></div>
+          <div class="promo__offer--title"><h1>Hello, world!</h1></div>
           <div class="promo__offer--btns">
-            <a href="#projects" class="offer__btn--projects">Проекты</a>
+            <button class="offer__btn--achievements" id="achievementsBtn">
+              Мои достижения
+            </button>
+
             <button
               type="button"
+              id="btnSwitch"
               class="offer__btn--switch"
               data-js-theme-switcher
             >
@@ -44,12 +49,13 @@
           </div>
         </div>
         <div class="promo__content">
-          <p>
-            Готова к новым вызовам — всегда открыта для интересных проектов и
-            новых возможностей!
-          </p>
+          <span id="typed-text"></span>
         </div>
       </section>
+      <article class="achievements" id="achievements">
+        <h2 class="achievements__title" id="achievementsTitle"></h2>
+        <div class="achievements__grid" id="achievementsGrid"></div>
+      </article>
     </div>
     <script type="module" src="/src/js/title_page.js"></script>
   </body>
