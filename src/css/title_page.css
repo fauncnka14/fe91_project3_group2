@@ -2,21 +2,23 @@
   --color-light: #eee7e1;
   --color-dark: #1a1818;
   --color-grey: #ccc;
-
   --color-text: var(--color-dark);
   --color-bg: var(--color-light);
   --color-border: var(--color-grey);
 }
+
 html.is-dark-theme {
   --color-text: var(--color-light);
   --color-bg: var(--color-dark);
   --color-border: var(--color-light);
 }
+
 body {
   color: var(--color-text);
   background-color: var(--color-bg);
   border-color: var(--color-grey);
 }
+
 .wrapper__tp {
   width: 100%;
   min-height: 100vh;
@@ -33,16 +35,18 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
   border-bottom: 2px solid #ccc;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
 .header__box--logo {
   display: flex;
   align-items: center;
 }
+
 .header__logo {
   width: 80px;
   height: auto;
@@ -51,27 +55,34 @@ body {
   border: 2px solid;
   transition: transform 0.3s ease;
 }
+
 .header__logo:hover {
   transform: scale(1.1);
 }
+
 .header__nav ul {
   display: flex;
   gap: 2rem;
   list-style: none;
 }
+
 .header__nav li {
   font-size: 1.1rem;
   font-weight: 500;
 }
+
 .header__nav a {
   text-decoration: none;
   color: var(--color-text);
   padding: 0.5rem;
   border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
+
 .header__nav a:hover {
-  background-color: rgba(220, 220, 220, 0.58);
+  background-color: rgb(220 220 220 / 58%);
   transform: translateY(-2px);
 }
 
@@ -84,25 +95,29 @@ body {
   padding: 3rem 2rem;
   margin-top: 8.5rem;
 }
+
 .promo__offer {
   position: relative;
   padding-left: 3rem;
 }
+
 .promo__offer--lable {
   margin-bottom: 1rem;
   font-size: 25px;
 }
+
 .promo__offer--title h1 {
   font-size: 5.5rem;
   font-weight: 600;
   margin-bottom: 3rem;
-
   line-height: 1.2;
 }
+
 .promo__offer--btns {
   display: flex;
   gap: 1rem;
 }
+
 .offer__btn--achievements,
 .offer__btn--switch {
   text-decoration: none;
@@ -113,28 +128,31 @@ body {
   background-color: var(--color-text);
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
 }
+
 .offer__btn--achievements:hover,
 .offer__btn--switch:hover {
   background-color: #333;
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
   cursor: auto;
 }
 
 .promo__content {
   position: relative;
-
   font-size: 40px;
   line-height: 1.6;
   width: 500px;
   height: 200px;
   text-align: left;
   overflow: hidden;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem 2rem;
 }
+
 .header__box--date {
   font-size: 20px;
   width: 300px;
@@ -145,9 +163,10 @@ body {
   letter-spacing: 4px;
   border: solid 0.5px;
   border-radius: 5px;
-  padding: 4px 15px 4px 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 4px 15px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
 }
+
 .achievements {
   padding: 4rem 2rem;
   background-color: var(--color-bg);
@@ -171,14 +190,16 @@ body {
   background: #fff;
   border: 1px solid var(--color-border);
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
   padding: 1.5rem;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .achievement-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgb(0 0 0 / 20%);
 }
 
 .achievement-card__title {
