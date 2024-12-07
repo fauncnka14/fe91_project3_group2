@@ -1,0 +1,63 @@
+.skills-h2 {
+  text-align: center;
+}
+.skills-h3 {
+  text-align: center;
+}
+.skills-wrapper {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.skills-cards1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.cards1__html {
+  border: 3px solid black;
+  width: 15rem;
+  height: 15rem;
+  text-align: center;
+}
+.cards1__css3 {
+  border: 3px solid black;
+  width: 15rem;
+  text-align: center;
+  height: 15rem;
+}
+.cards1__js {
+  border: 3px solid black;
+  width: 15rem;
+  text-align: center;
+  height: 15rem;
+}
+.cards1__figma {
+  border: 3px solid black;
+  width: 15rem;
+  text-align: center;
+  height: 15rem;
+}
+.skills-cards2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.cards2__react {
+  border: 3px solid black;
+  width: 15rem;
+  text-align: center;
+  height: 15rem;
+}
+.cards2__git {
+  border: 3px solid black;
+  width: 15rem;
+  text-align: center;
+  height: 15rem;
+}
+.cards2__sass {
+  border: 3px solid black;
+  width: 15rem;
+  text-align: center;
+  height: 15rem;
+}
