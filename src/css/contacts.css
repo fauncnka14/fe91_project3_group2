@@ -7,3 +7,38 @@
   grid-column: 1 / 3;
   justify-self: center;
 }
+.contact__form-inner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--color-text);
+  border-radius: 10px;
+}
+.contact__form-item {
+  display: flex;
+  flex-flow: column;
+}
+.subject {
+  grid-column: 1 /3;
+}
+.message {
+  grid-column: 1 / 3;
+}
+.contact__form-item input {
+  border: 1px solid var(--color-text);
+  border-radius: 10px;
+  height: 3rem;
+  background: transparent;
+}
+.contact__form-item textarea {
+  border: 1px solid var(--color-text);
+  border-radius: 10px;
+  height: 8rem;
+  background: transparent;
+}
+.contact__form-button {
+  width: 60%;
+  height: 4rem;
+}

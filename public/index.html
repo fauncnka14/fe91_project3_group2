@@ -142,42 +142,51 @@
       </aside>
       <div class="contact__form-container">
         <form action="">
-          <label for="name">Полное имя</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Ваше Имя"
-            required=""
-          />
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Ваш email"
-            required=""
-          />
-          <label for="subject">Предмет дискуссии</label>
-          <input
-            type="text"
-            name="subject"
-            id="subject"
-            placeholder="О чем речь?"
-            required=""
-          />
-          <label for="message">Ваше сообщение</label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Тут можно поделиться своими мыслями."
-            rows="6"
-            cols="50"
-            wrap="hard"
-            required=""
-            tabindex="0"
-          ></textarea>
-          <button type="submit" name="submit">Отправить обращение</button>
+          <div class="contact__form-inner-container">
+            <div class="contact__form-item name">
+              <label for="name">ПОЛНОЕ ИМЯ</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="ВАШЕ ИМЯ"
+                required=""
+              />
+            </div>
+            <div class="contact__form-item email">
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="ВАШ EMAIL"
+                required=""
+              />
+            </div>
+            <div class="contact__form-item subject">
+              <label for="subject">ТЕМА ОБРАЩЕНИЯ</label>
+              <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="О чем речь?"
+              required=""
+              />
+            </div>
+            <div class="contact__form-item message">
+              <label for="message">ВАШЕ СООБЩЕНИЕ</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Тут можно поделиться своими мыслями."
+                rows="6"
+                cols="50"
+                wrap="hard"
+                required=""
+                tabindex="0"
+              ></textarea></div>
+            <button type="submit" name="submit" class="contact__form-button">Отправить обращение</button>
+          </div>
         </form>
       </div>
     </section>
