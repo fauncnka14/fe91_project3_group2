@@ -135,13 +135,27 @@
 <section class="contact">
       <h2 class="contact__h2">Контакты</h2>
       <aside class="contact__sidebar">
-        <div class="contact__sidebar-location">f</div>
-        <div class="contact__sidebar-email">u</div>
-        <div class="contact__sidebar-telephone">c</div>
-        <div class="contact__sidebar-socials">k</div>
+        <div class="contact__sidebar-location">
+          <img src="assets/images/ikons/free-icon-placeholder-684809.png" alt="icon_location" class="icons">
+          <h3>BASED IN</h3>
+          <div>Moscow, Russia</div>
+        </div>
+        <div class="contact__sidebar-email">
+          <img src="assets/images/ikons/free-icon-message-566056.png" alt="icon-emil" class="icons">
+          <h3>EMAIL ME</h3>
+          <DIV>ITGIRLSSCHOOL@GMAIL.COM</DIV>
+        </div>
+        <div class="contact__sidebar-telephone">
+          <img src="assets/images/ikons/free-icon-phone-566259.png" alt="icon-tel" class="icons">
+          <h3>CONTACT NUMBER</h3>
+          <div>+12345678912</div>
+        </div>
+        <div class="contact__sidebar-socials">
+          <h3>SOCIALS</h3>
+        </div>
       </aside>
       <div class="contact__form-container">
-        <form action="">
+        <form action="" name="contactForm">
           <div class="contact__form-inner-container">
             <div class="contact__form-item name">
               <label for="name">ПОЛНОЕ ИМЯ</label>
@@ -151,6 +165,7 @@
                 id="name"
                 placeholder="ВАШЕ ИМЯ"
                 required=""
+                class="input-field"
               />
             </div>
             <div class="contact__form-item email">
@@ -161,6 +176,7 @@
                 id="email"
                 placeholder="ВАШ EMAIL"
                 required=""
+                class="input-field"
               />
             </div>
             <div class="contact__form-item subject">
@@ -170,6 +186,7 @@
               name="subject"
               id="subject"
               placeholder="О чем речь?"
+              class="input-field"
               />
             </div>
             <div class="contact__form-item message">
@@ -182,7 +199,7 @@
                 cols="50"
                 wrap="hard"
                 required=""
-                tabindex="0"
+                class="input-field"
               ></textarea></div>
             <button type="submit" name="submit" class="contact__form-button">Отправить обращение</button>
           </div>
@@ -194,6 +211,7 @@
     </footer>
   <script type="module" src="/src/js/title_page.js"></script>
   <script src="/src/js/about.js"></script>
+  <script src="/src/js/contacts.js"></script>
 </body>
 
 </html>
