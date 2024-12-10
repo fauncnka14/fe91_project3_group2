@@ -1,15 +1,17 @@
 import globals from 'globals'
 
-/** @type {import('eslint').Linter.Config[]} */
+;/ @type {import('eslint').Linter.Config[]} */
 export default [
   {
-    parserOptions: {
-      sourceType: 'module', // Поддержка ES-модулей
+    languageOptions: {
+      parserOptions: {
+        sourceType: 'module', // Поддержка ES-модулей
+      },
     },
-    ignores: ['node_modules/**', 'dist/**'], // Игнорировать ненужные папки
+    ignores: ['node_modules/', 'dist/'], // Игнорировать ненужные папки
   },
   {
-    files: ['**/*.js'], // Применяется к JS-файлам
+    files: ['/*.js'], // Применяется к JS-файлам
     languageOptions: {
       sourceType: 'module', // Поддержка ES-модулей
       globals: globals.browser, // Глобальные переменные браузера
