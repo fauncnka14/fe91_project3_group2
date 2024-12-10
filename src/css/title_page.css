@@ -37,9 +37,7 @@ body {
   padding: 1rem 2rem;
   box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
   border-bottom: 2px solid #ccc;
-  position: sticky;
   top: 0;
-  z-index: 1000;
 }
 
 .header__box--logo {
@@ -89,11 +87,11 @@ body {
 .promo {
   display: flex;
   position: relative;
-  justify-content: center;
-  gap: 10rem;
+  justify-content: space-around;
+  gap: 5rem;
   align-items: center;
   padding: 3rem 2rem;
-  margin-top: 8.5rem;
+  margin-top: 5rem;
 }
 
 .promo__offer {
@@ -102,7 +100,7 @@ body {
 }
 
 .promo__offer--lable {
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   font-size: 25px;
 }
 
@@ -144,13 +142,12 @@ body {
 
 .promo__content {
   position: relative;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.6;
   width: 500px;
   height: 200px;
   text-align: left;
   overflow: hidden;
-  padding: 1rem 2rem;
 }
 
 .header__box--date {
@@ -165,6 +162,20 @@ body {
   border-radius: 5px;
   padding: 4px 15px;
   box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
+}
+
+.video-container {
+  width: 450px;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0/ 20%);
+}
+
+video {
+  width: 100%; /* Растягивает видео на всю ширину */
+  height: 100%; /* Растягивает видео на всю высоту */
+  object-fit: cover; /* Обрезка видео внутри контейнера */
 }
 
 .achievements {
