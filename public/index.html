@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
@@ -14,70 +15,61 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="/src/css/title_page.css" />
-    <link href="/src/css/about.css" rel="stylesheet" />
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/dist/date-fns.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="/src/css/skills.css" />
-    <link rel="stylesheet" href="/src/css/contacts.css" />
-    <title>Frontend-developer starter page</title>
-  </head>
+  <link rel="stylesheet" href="/src/css/title_page.css" />
+  <link href="/src/css/main.css" rel="stylesheet" />
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/dist/date-fns.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="/src/css/skills.css" />
 
-  <body>
-    <div class="wrapper__tp">
-      <header class="header__box">
-        <div class="header__box--logo">
-          <img
-            src="/public/assets/images/logo.svg"
-            alt="Логотип"
-            class="header__logo"
-          />
-        </div>
-        <div class="header__box--date">
-          <p id="currentTime"></p>
-        </div>
-        <nav class="header__nav">
-          <ul>
-            <li><a href="">Обо мне</a></li>
-            <li><a href="">Инструменты</a></li>
-            <li><a href="">Работы</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="promo">
-        <div class="promo__offer">
-          <div class="promo__offer--lable">
-            Сайт-портфолио frontend-разработчицы
-          </div>
-          <div class="promo__offer--title">
-            <h1>Hello, world!</h1>
-          </div>
-          <div class="promo__offer--btns">
-            <button class="offer__btn--achievements" id="achievementsBtn">
-              Мои достижения
-            </button>
+  <title>Frontend-developer starter page</title>
+</head>
 
-            <button
-              type="button"
-              id="btnSwitch"
-              class="offer__btn--switch"
-              data-js-theme-switcher
-            >
-              Переключить тему
-            </button>
-          </div>
+<body>
+  <div class="wrapper__tp">
+    <header class="header__box">
+      <div class="header__box--logo">
+        <img src="/public/assets/images/logo.svg" alt="Логотип" class="header__logo" />
+      </div>
+      <div class="header__box--date">
+        <p id="currentTime"></p>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="">Обо мне</a></li>
+          <li><a href="">Инструменты</a></li>
+          <li><a href="">Работы</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="promo">
+      <div class="promo__offer">
+        <div class="promo__offer--lable">
+          Сайт-портфолио frontend-разработчицы
         </div>
-        <div class="promo__content">
-          <span id="typed-text"></span>
+        <div class="promo__offer--title">
+          <h1>Hello, world!</h1>
         </div>
-      </section>
-      <article class="achievements" id="achievements">
-        <h2 class="achievements__title" id="achievementsTitle"></h2>
-        <div class="achievements__grid" id="achievementsGrid"></div>
-      </article>
-    </div>
+        <div class="promo__offer--btns">
+          <button class="offer__btn--achievements" id="achievementsBtn">
+            Мои достижения
+          </button>
+
+          <button type="button" id="btnSwitch" class="offer__btn--switch" data-js-theme-switcher>
+            Переключить тему
+          </button>
+        </div>
+      </div>
+      <div class="promo__content">
+        <span id="typed-text"></span>
+      </div>
+    </section>
+    <article class="achievements" id="achievements">
+      <h2 class="achievements__title" id="achievementsTitle"></h2>
+      <div class="achievements__grid" id="achievementsGrid"></div>
+    </article>
+  </div>
 
   <!--Skills-->
   <h2 class="skills-h2">Навыки</h2>
@@ -132,55 +124,29 @@
       </div>
     </div>
   </section>
-<section class="contact">
-      <h2 class="contact__h2">Контакты</h2>
-      <aside class="contact__sidebar">
-        <div class="contact__sidebar-location">f</div>
-        <div class="contact__sidebar-email">u</div>
-        <div class="contact__sidebar-telephone">c</div>
-        <div class="contact__sidebar-socials">k</div>
-      </aside>
-      <div class="contact__form-container">
-        <form action="">
-          <label for="name">Полное имя</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Ваше Имя"
-            required=""
-          />
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Ваш email"
-            required=""
-          />
-          <label for="subject">Предмет дискуссии</label>
-          <input
-            type="text"
-            name="subject"
-            id="subject"
-            placeholder="О чем речь?"
-            required=""
-          />
-          <label for="message">Ваше сообщение</label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Тут можно поделиться своими мыслями."
-            rows="6"
-            cols="50"
-            wrap="hard"
-            required=""
-            tabindex="0"
-          ></textarea>
-          <button type="submit" name="submit">Отправить обращение</button>
-        </form>
-      </div>
-    </section>
+  <section class="contact">
+    <h2 class="contact__h2">Контакты</h2>
+    <aside class="contact__sidebar">
+      <div class="contact__sidebar-location">f</div>
+      <div class="contact__sidebar-email">u</div>
+      <div class="contact__sidebar-telephone">c</div>
+      <div class="contact__sidebar-socials">k</div>
+    </aside>
+    <div class="contact__form-container">
+      <form action="">
+        <label for="name">Полное имя</label>
+        <input type="text" name="name" id="name" placeholder="Ваше Имя" required="" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Ваш email" required="" />
+        <label for="subject">Предмет дискуссии</label>
+        <input type="text" name="subject" id="subject" placeholder="О чем речь?" required="" />
+        <label for="message">Ваше сообщение</label>
+        <textarea name="message" id="message" placeholder="Тут можно поделиться своими мыслями." rows="6" cols="50"
+          wrap="hard" required="" tabindex="0"></textarea>
+        <button type="submit" name="submit">Отправить обращение</button>
+      </form>
+    </div>
+  </section>
   <script type="module" src="/src/js/title_page.js"></script>
   <script src="/src/js/about.js"></script>
 </body>
