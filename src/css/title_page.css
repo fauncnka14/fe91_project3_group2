@@ -17,6 +17,9 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   border-color: var(--color-grey);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper__tp {
@@ -24,7 +27,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: Arial, sans-serif;
+  font-family: Inter, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -37,9 +40,7 @@ body {
   padding: 1rem 2rem;
   box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
   border-bottom: 2px solid #ccc;
-  position: sticky;
   top: 0;
-  z-index: 1000;
 }
 
 .header__box--logo {
@@ -89,11 +90,11 @@ body {
 .promo {
   display: flex;
   position: relative;
-  justify-content: center;
-  gap: 10rem;
+  justify-content: space-around;
+  gap: 5rem;
   align-items: center;
-  padding: 3rem 2rem;
-  margin-top: 8.5rem;
+  margin-top: 5rem;
+  width: 100%;
 }
 
 .promo__offer {
@@ -102,8 +103,8 @@ body {
 }
 
 .promo__offer--lable {
-  margin-bottom: 1rem;
-  font-size: 25px;
+  margin-bottom: 0.2rem;
+  font-size: 1.563rem;
 }
 
 .promo__offer--title h1 {
@@ -122,7 +123,7 @@ body {
 .offer__btn--switch {
   text-decoration: none;
   color: var(--color-bg);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   text-align: center;
   background-color: var(--color-text);
@@ -144,18 +145,16 @@ body {
 
 .promo__content {
   position: relative;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.6;
-  width: 500px;
+  width: 400px;
   height: 200px;
   text-align: left;
   overflow: hidden;
-  padding: 1rem 2rem;
 }
 
 .header__box--date {
-  font-size: 20px;
-  width: 300px;
+  font-size: 1.25rem;
   display: flex;
   justify-content: center;
   font-weight: 400;
@@ -167,6 +166,25 @@ body {
   box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
 }
 
+#current-time {
+  margin: 5px;
+}
+
+.video-container {
+  width: 28.125rem;
+  height: 37.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0/ 20%);
+  padding: 0 4rem 0 2rem;
+}
+
+video {
+  width: 100%; /* Растягивает видео на всю ширину */
+  height: 100%; /* Растягивает видео на всю высоту */
+  object-fit: cover; /* Обрезка видео внутри контейнера */
+  border-radius: 20px;
+}
+
 .achievements {
   padding: 4rem 2rem;
   background-color: var(--color-bg);
@@ -176,6 +194,7 @@ body {
 .achievements__title {
   font-size: 2rem;
   font-weight: bold;
+  font-family: Spectral, serif;
   margin-bottom: 2rem;
   color: var(--color-text);
 }
@@ -218,4 +237,130 @@ body {
   margin-top: 1rem;
   font-size: 0.9rem;
   color: var(--color-grey);
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media (width <= 1010px) {
+  .header__box--date {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .promo__offer--title h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (width <= 950px) {
+  .promo {
+    flex-direction: column;
+    margin-top: 6rem;
+  }
+
+  .promo__offer--lable {
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0 2rem 3rem 0;
+    text-align: center;
+    border: 1px solid var(--color-grey);
+    border-radius: 10px;
+    padding: 1rem;
+    font-family: Spectral, serif;
+  }
+
+  .promo__offer--title h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    font-family: Spectral, serif;
+  }
+
+  .promo__content {
+    font-size: 25px;
+    width: 500px;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (width <= 800px) {
+  .promo {
+    flex-direction: column-reverse; /* Меняем порядок: сначала видео, потом offer */
+  }
+
+  .promo__offer {
+    padding: 0;
+    margin: 0;
+  }
+
+  .promo__offer--lable {
+    margin: 0 0 2rem;
+    font-family: Spectral, serif;
+  }
+
+  .promo__offer--title {
+    display: none;
+  }
+
+  .promo__content {
+    margin: 0 0 3rem 2rem;
+  }
+
+  .promo__offer--btns {
+    margin: 0 0 0 2rem;
+  }
+
+  .header__nav {
+    display: none; /* Скрыть меню по умолчанию на мобильных устройствах */
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 15px var(--color-grey);
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .header__nav.open {
+    display: flex; /* Показать меню при активации */
+    margin-top: 50px;
+    margin-bottom: 1rem;
+  }
+
+  /* Стили для бургер-меню */
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger-menu div {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+
+  /* Анимация для бургер-меню */
+  .burger-menu.open div:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 9px;
+  }
+
+  .burger-menu.open div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.open div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -9px;
+  }
 }

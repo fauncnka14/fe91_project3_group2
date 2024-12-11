@@ -27,51 +27,76 @@
   <title>Frontend-developer starter page</title>
 </head>
 
-<body>
-  <div class="wrapper__tp">
-    <header class="header__box">
-      <div class="header__box--logo">
-        <img src="/public/assets/images/logo.svg" alt="Логотип" class="header__logo" />
-      </div>
-      <div class="header__box--date">
-        <p id="currentTime"></p>
-      </div>
-      <nav class="header__nav">
-        <ul>
-          <li><a href="">Обо мне</a></li>
-          <li><a href="">Инструменты</a></li>
-          <li><a href="">Работы</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="promo">
-      <div class="promo__offer">
-        <div class="promo__offer--lable">
-          Сайт-портфолио frontend-разработчицы
+  <body>
+    <section class="wrapper__tp">
+      <header class="header__box">
+        <div class="header__box--logo">
+          <img
+            src="/public/assets/images/logo.svg"
+            alt="Логотип"
+            class="header__logo"
+          />
         </div>
-        <div class="promo__offer--title">
-          <h1>Hello, world!</h1>
+        <div class="header__box--date">
+          <p id="current-time"></p>
         </div>
-        <div class="promo__offer--btns">
-          <button class="offer__btn--achievements" id="achievementsBtn">
-            Мои достижения
-          </button>
+        <!-- Бургер-меню -->
+        <div class="burger-menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <nav class="header__nav">
+          <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#skills">Инструменты</a></li>
+            <li><a href="#portfolio">Работы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="promo">
+        <div class="promo__offer">
+          <div class="promo__offer--lable">
+            Сайт-портфолио frontend-разработчицы
+          </div>
+          <div class="promo__offer--title">
+            <h1>Hello, world!</h1>
+          </div>
+          <div class="promo__content">
+            <span id="typed-text"></span>
+          </div>
+          <div class="promo__offer--btns">
+            <button class="offer__btn--achievements" id="achievementsBtn">
+              Мои достижения
+            </button>
 
-          <button type="button" id="btnSwitch" class="offer__btn--switch" data-js-theme-switcher>
-            Переключить тему
-          </button>
+            <button
+              type="button"
+              id="btnSwitch"
+              class="offer__btn--switch"
+              data-js-theme-switcher
+            >
+              Переключить тему
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="promo__content">
-        <span id="typed-text"></span>
-      </div>
+
+        <div class="video-container">
+          <video autoplay muted loop>
+            <source
+              src="/public/assets/video/7026676-uhd_2160_3840_24fps.mp4"
+              type="video/mp4"
+            />
+            Ваш браузер не поддерживает видео.
+          </video>
+        </div>
+      </section>
+      <article class="achievements" id="achievements">
+        <h2 class="achievements__title" id="achievementsTitle"></h2>
+        <div class="achievements__grid" id="achievementsGrid"></div>
+      </article>
     </section>
-    <article class="achievements" id="achievements">
-      <h2 class="achievements__title" id="achievementsTitle"></h2>
-      <div class="achievements__grid" id="achievementsGrid"></div>
-    </article>
-  </div>
 
   <!--Skills-->
   <h2 class="skills-h2">Навыки</h2>
