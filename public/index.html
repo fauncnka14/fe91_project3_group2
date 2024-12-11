@@ -1,25 +1,31 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap&subset=cyrillic"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap&subset=cyrillic"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/src/css/title_page.css" />
-    <link href="/src/css/about.css" rel="stylesheet" />
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/dist/date-fns.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="/src/css/skills.css" />
 
-    <title>Document</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/title_page.css" />
+  <link href="/src/css/main.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.8.4/dist/smooth-scrollbar.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.8.4/dist/smooth-scrollbar.css">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/dist/date-fns.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="/src/css/skills.css" />
+
+  <title>Frontend-developer starter page</title>
+</head>
 
   <body>
     <section class="wrapper__tp">
@@ -92,59 +98,133 @@
       </article>
     </section>
 
-    <!--Skills-->
-    <h2 class="skills-h2">Навыки</h2>
-    <h3 class="skills-h3">Стек технологий</h3>
-    <div class="skills-wrapper">
-      <div class="skills-cards1">
-        <div class="cards1__html">HTML5</div>
-        <div class="cards1__css3">CSS3</div>
-        <div class="cards1__js">JS</div>
-        <div class="cards1__figma">Figma</div>
-      </div>
-      <div class="skills-cards2">
-        <div class="cards2__react">React</div>
-        <div class="cards2__git">Git/GitHub</div>
-        <div class="cards2__git">Bootstrap</div>
-        <div class="cards2__sass">SASS</div>
-      </div>
+  <!--Skills-->
+  <h2 class="skills-h2">Навыки</h2>
+  <h3 class="skills-h3">Стек технологий</h3>
+  <div class="skills-wrapper">
+    <div class="skills-cards1">
+      <div class="cards1__html">HTML5</div>
+      <div class="cards1__css3">CSS3</div>
+      <div class="cards1__js">JS</div>
+      <div class="cards1__figma">Figma</div>
     </div>
+    <div class="skills-cards2">
+      <div class="cards2__react">React</div>
+      <div class="cards2__git">Git/GitHub</div>
+      <div class="cards2__git">Bootstrap</div>
+      <div class="cards2__sass">SASS</div>
+    </div>
+  </div>
+
+  <section class="about">
 
     <div class="about__container">
       <h1 class="about__title">Обо мне</h1>
-      <p class="about__description">
-        Привет! Я делаю сайты, которые работают быстро и выглядят классно. Всё
-        просто: вы рассказываете свою идею, а я превращаю её в реальность.
-        Каждый проект — это новый вызов, а я люблю делать всё, чтобы результат
-        вас впечатлил. Готовы начать? Тогда пишите, и мы обсудим вашу идею!
-      </p>
+      <p class="about__description">Привет! Я делаю сайты, которые работают быстро и выглядят классно. </br>Всё просто:
+        вы
+        рассказываете свою идею, а я превращаю её в реальность. </br>Каждый проект — это новый вызов, а я люблю делать
+        всё,
+        чтобы результат вас впечатлил. </br>Готовы начать? Тогда пишите, и мы обсудим вашу идею!</p>
     </div>
 
     <div class="images">
       <div class="images__item">
-        <img src="/public/assets/images/buns.jpg" alt="Изображение выпечки" />
-        <div class="images__item-overlay">
-          Помимо работы, обожаю печь! Экспериментирую с рецептами и радую
-          близких ароматной выпечкой.
-        </div>
+        <img src="/public/assets/images/buns.jpg" alt="Изображение выпечки">
+        <div class="images__item-overlay">Помимо работы, обожаю печь! Экспериментирую с рецептами и радую близких
+          ароматной выпечкой.</div>
       </div>
       <div class="images__item">
-        <img src="/public/assets/images/tent.jpg" alt="Отдых в палатке" />
-        <div class="images__item-overlay">
-          Люблю проводить время на природе. Походы с палаткой — лучший способ
-          перезагрузиться и вдохновиться.
-        </div>
+        <img src="/public/assets/images/tent.jpg" alt="Отдых в палатке">
+        <div class="images__item-overlay">Люблю проводить время на природе. Походы с палаткой — лучший способ
+          перезагрузиться и вдохновиться.</div>
       </div>
       <div class="images__item">
-        <img src="/public/assets/images/graph.jpg" alt="Графический дизайн" />
-        <div class="images__item-overlay">
-          Графический дизайн — моё творческое хобби. Оно помогает взглянуть на
-          работу разработчика под другим углом
-        </div>
+        <img src="/public/assets/images/graph.jpg" alt="Графический дизайн">
+        <div class="images__item-overlay">Графический дизайн — моё творческое хобби. Оно помогает взглянуть на работу
+          разработчика под другим углом</div>
       </div>
     </div>
-    <script type="module" src="/src/js/title_page.js"></script>
-    <script type="module" src="/src/js/title_page.js"></script>
-    <script src="/src/js/about.js"></script>
-  </body>
+  </section>
+<section class="contact">
+      <h2 class="contact__h2">Контакты</h2>
+      <aside class="contact__sidebar">
+        <div class="contact__sidebar-location">
+          <img src="assets/images/ikons/free-icon-placeholder-684809.png" alt="icon_location" class="icons">
+          <h3>BASED IN</h3>
+          <div>Moscow, Russia</div>
+        </div>
+        <div class="contact__sidebar-email">
+          <img src="assets/images/ikons/free-icon-message-566056.png" alt="icon-emil" class="icons">
+          <h3>EMAIL ME</h3>
+          <DIV>ITGIRLSSCHOOL@GMAIL.COM</DIV>
+        </div>
+        <div class="contact__sidebar-telephone">
+          <img src="assets/images/ikons/free-icon-phone-566259.png" alt="icon-tel" class="icons">
+          <h3>CONTACT NUMBER</h3>
+          <div>+12345678912</div>
+        </div>
+        <div class="contact__sidebar-socials">
+          <h3>SOCIALS</h3>
+        </div>
+      </aside>
+      <div class="contact__form-container">
+        <form action="" name="contactForm">
+          <div class="contact__form-inner-container">
+            <div class="contact__form-item name">
+              <label for="name">ПОЛНОЕ ИМЯ</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="ВАШЕ ИМЯ"
+                required=""
+                class="input-field"
+              />
+            </div>
+            <div class="contact__form-item email">
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="ВАШ EMAIL"
+                required=""
+                class="input-field"
+              />
+            </div>
+            <div class="contact__form-item subject">
+              <label for="subject">ТЕМА ОБРАЩЕНИЯ</label>
+              <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="О чем речь?"
+              class="input-field"
+              />
+            </div>
+            <div class="contact__form-item message">
+              <label for="message">ВАШЕ СООБЩЕНИЕ</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Тут можно поделиться своими мыслями."
+                rows="6"
+                cols="50"
+                wrap="hard"
+                required=""
+                class="input-field"
+              ></textarea></div>
+            <button type="submit" name="submit" class="contact__form-button">Отправить обращение</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      designed by group #2 91 frontend ITgirlsschool
+    </footer>
+  <script type="module" src="/src/js/title_page.js"></script>
+  <script src="/src/js/about.js"></script>
+  <script src="/src/js/contacts.js"></script>
+</body>
+
 </html>
