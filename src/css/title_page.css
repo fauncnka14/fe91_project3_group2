@@ -27,7 +27,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: Arial, sans-serif;
+  font-family: Inter, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -104,7 +104,7 @@ body {
 
 .promo__offer--lable {
   margin-bottom: 0.2rem;
-  font-size: 25px;
+  font-size: 1.563rem;
 }
 
 .promo__offer--title h1 {
@@ -123,7 +123,7 @@ body {
 .offer__btn--switch {
   text-decoration: none;
   color: var(--color-bg);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   text-align: center;
   background-color: var(--color-text);
@@ -147,7 +147,7 @@ body {
   position: relative;
   font-size: 35px;
   line-height: 1.6;
-  width: 500px;
+  width: 400px;
   height: 200px;
   text-align: left;
   overflow: hidden;
@@ -155,7 +155,6 @@ body {
 
 .header__box--date {
   font-size: 1.25rem;
-  width: auto;
   display: flex;
   justify-content: center;
   font-weight: 400;
@@ -195,6 +194,7 @@ video {
 .achievements__title {
   font-size: 2rem;
   font-weight: bold;
+  font-family: Spectral, serif;
   margin-bottom: 2rem;
   color: var(--color-text);
 }
@@ -264,18 +264,19 @@ video {
     font-weight: 500;
     font-size: 30px;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    margin: 0 2rem 3rem 0;
     text-align: center;
     border: 1px solid var(--color-grey);
     border-radius: 10px;
-
     padding: 1rem;
+    font-family: Spectral, serif;
   }
 
   .promo__offer--title h1 {
-    font-size: 2rem;
-    font-weight: 300;
-    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    font-family: Spectral, serif;
   }
 
   .promo__content {
@@ -288,9 +289,29 @@ video {
 
 @media (width <= 800px) {
   .promo {
-    flex-direction: column;
-    gap: 6rem;
-    margin-top: 5rem;
+    flex-direction: column-reverse; /* Меняем порядок: сначала видео, потом offer */
+  }
+
+  .promo__offer {
+    padding: 0;
+    margin: 0;
+  }
+
+  .promo__offer--lable {
+    margin: 0 0 2rem;
+    font-family: Spectral, serif;
+  }
+
+  .promo__offer--title {
+    display: none;
+  }
+
+  .promo__content {
+    margin: 0 0 3rem 2rem;
+  }
+
+  .promo__offer--btns {
+    margin: 0 0 0 2rem;
   }
 
   .header__nav {
@@ -309,6 +330,7 @@ video {
   .header__nav.open {
     display: flex; /* Показать меню при активации */
     margin-top: 50px;
+    margin-bottom: 1rem;
   }
 
   /* Стили для бургер-меню */
