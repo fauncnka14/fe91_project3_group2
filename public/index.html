@@ -120,26 +120,26 @@
       </div>
     </div>
   </section>
-<section class="contact">
+<section class="contact" id="contact">
       <h2 class="contact__h2">Контакты</h2>
       <aside class="contact__sidebar">
         <div class="contact__sidebar-location">
           <img src="assets/images/ikons/free-icon-placeholder-684809.png" alt="icon_location" class="icons">
-          <h3>BASED IN</h3>
+          <h3 class="sidebar-headers">BASED IN</h3>
           <div>Moscow, Russia</div>
         </div>
         <div class="contact__sidebar-email">
           <img src="assets/images/ikons/free-icon-message-566056.png" alt="icon-emil" class="icons">
-          <h3>EMAIL ME</h3>
+          <h3 class="sidebar-headers">EMAIL ME</h3>
           <DIV>ITGIRLSSCHOOL@GMAIL.COM</DIV>
         </div>
         <div class="contact__sidebar-telephone">
           <img src="assets/images/ikons/free-icon-phone-566259.png" alt="icon-tel" class="icons">
-          <h3>CONTACT NUMBER</h3>
+          <h3 class="sidebar-headers">CONTACT NUMBER</h3>
           <div>+12345678912</div>
         </div>
         <div class="contact__sidebar-socials">
-          <h3>SOCIALS</h3>
+          <h3 class="sidebar-headers">SOCIALS</h3>
         </div>
       </aside>
       <div class="contact__form-container">
@@ -152,9 +152,9 @@
                 name="name"
                 id="name"
                 placeholder="ВАШЕ ИМЯ"
-                required=""
                 class="input-field"
               />
+              <span class="error" id="nameError"></span>
             </div>
             <div class="contact__form-item email">
               <label for="email">EMAIL</label>
@@ -163,9 +163,9 @@
                 name="email"
                 id="email"
                 placeholder="ВАШ EMAIL"
-                required=""
                 class="input-field"
               />
+              <span class="error" id="emailError"></span>
             </div>
             <div class="contact__form-item subject">
               <label for="subject">ТЕМА ОБРАЩЕНИЯ</label>
@@ -186,9 +186,10 @@
                 rows="6"
                 cols="50"
                 wrap="hard"
-                required=""
                 class="input-field"
-              ></textarea></div>
+              ></textarea>
+              <span class="error" id="inputError"></span>
+            </div>
             <button type="submit" name="submit" class="contact__form-button">Отправить обращение</button>
           </div>
         </form>
