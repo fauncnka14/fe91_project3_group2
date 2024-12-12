@@ -1,8 +1,14 @@
+window.addEventListener('load', (event) => {
+  new cursoreffects.fairyDustCursor({
+    colors: ['#00000', '#ffffff', '#0000ff'],
+  })
+})
+
 // Добавление библиотеки и создание текущей даты
-import { format } from '/node_modules/date-fns/index.js'
+
 document.addEventListener('DOMContentLoaded', () => {
   const currentDate = new Date()
-  const formattedDate = format(currentDate, 'dd-MM-yyyy HH:mm:ss')
+  const formattedDate = dateFns.format(currentDate, 'dd-MM-yyyy HH:mm:ss')
   console.log(`Текущая дата и время: ${formattedDate}`)
 
   const currentTime = document.getElementById('current-time')
