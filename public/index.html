@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
@@ -14,18 +15,20 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="/src/css/title_page.css" />
-    <link href="/src/css/about.css" rel="stylesheet" />
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/dist/date-fns.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="/src/css/skills.css" />
-    <link rel="stylesheet" href="/src/css/contacts.css" />
-    <title>Frontend-developer starter page</title>
-  </head>
+  <link rel="stylesheet" href="/src/css/title_page.css" />
+  <link href="/src/css/main.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.8.4/dist/smooth-scrollbar.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.8.4/dist/smooth-scrollbar.css">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/dist/date-fns.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="/src/css/skills.css" />
+
+  <title>Frontend-developer starter page</title>
+</head>
 
   <body>
-    <div class="wrapper__tp">
+    <section class="wrapper__tp">
       <header class="header__box">
         <div class="header__box--logo">
           <img
@@ -35,14 +38,20 @@
           />
         </div>
         <div class="header__box--date">
-          <p id="currentTime"></p>
+          <p id="current-time"></p>
+        </div>
+        <!-- Бургер-меню -->
+        <div class="burger-menu">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
         <nav class="header__nav">
           <ul>
-            <li><a href="">Обо мне</a></li>
-            <li><a href="">Инструменты</a></li>
-            <li><a href="">Работы</a></li>
-            <li><a href="">Контакты</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#skills">Инструменты</a></li>
+            <li><a href="#portfolio">Работы</a></li>
+            <li><a href="#contact">Контакты</a></li>
           </ul>
         </nav>
       </header>
@@ -53,6 +62,9 @@
           </div>
           <div class="promo__offer--title">
             <h1>Hello, world!</h1>
+          </div>
+          <div class="promo__content">
+            <span id="typed-text"></span>
           </div>
           <div class="promo__offer--btns">
             <button class="offer__btn--achievements" id="achievementsBtn">
@@ -69,15 +81,22 @@
             </button>
           </div>
         </div>
-        <div class="promo__content">
-          <span id="typed-text"></span>
+
+        <div class="video-container">
+          <video autoplay muted loop>
+            <source
+              src="/public/assets/video/7026676-uhd_2160_3840_24fps.mp4"
+              type="video/mp4"
+            />
+            Ваш браузер не поддерживает видео.
+          </video>
         </div>
       </section>
       <article class="achievements" id="achievements">
         <h2 class="achievements__title" id="achievementsTitle"></h2>
         <div class="achievements__grid" id="achievementsGrid"></div>
       </article>
-    </div>
+    </section>
 
   <!--Skills-->
   <section id="skills">
@@ -109,12 +128,6 @@
 </section>
   
   <section class="about">
-    <!-- <div class="about__container">
-      <h1 class="about__title">Обо мне</h1>
-      <p class="about__description">Привет! Я делаю сайты, которые работают быстро и выглядят классно. Всё просто: вы
-        рассказываете свою идею, а я превращаю её в реальность. Каждый проект — это новый вызов, а я люблю делать всё,
-        чтобы результат вас впечатлил. Готовы начать? Тогда пишите, и мы обсудим вашу идею!</p>
-    </div> -->
 
     <div class="about__container">
       <h1 class="about__title">Обо мне</h1>
@@ -143,60 +156,90 @@
       </div>
     </div>
   </section>
-<section class="contact">
+<section class="contact" id="contact">
       <h2 class="contact__h2">Контакты</h2>
       <aside class="contact__sidebar">
-        <div class="contact__sidebar-location">f</div>
-        <div class="contact__sidebar-email">u</div>
-        <div class="contact__sidebar-telephone">c</div>
-        <div class="contact__sidebar-socials">k</div>
+        <div class="contact__sidebar-location">
+          <img src="assets/images/ikons/free-icon-placeholder-684809.png" alt="icon_location" class="icons">
+          <h3 class="sidebar-headers">BASED IN</h3>
+          <div>Moscow, Russia</div>
+        </div>
+        <div class="contact__sidebar-email">
+          <img src="assets/images/ikons/free-icon-message-566056.png" alt="icon-emil" class="icons">
+          <h3 class="sidebar-headers">EMAIL ME</h3>
+          <DIV>ITGIRLSSCHOOL@GMAIL.COM</DIV>
+        </div>
+        <div class="contact__sidebar-telephone">
+          <img src="assets/images/ikons/free-icon-phone-566259.png" alt="icon-tel" class="icons">
+          <h3 class="sidebar-headers">CONTACT NUMBER</h3>
+          <div>+12345678912</div>
+        </div>
+        <div class="contact__sidebar-socials">
+          <h3 class="sidebar-headers">SOCIALS</h3>
+        </div>
       </aside>
       <div class="contact__form-container">
-        <form action="">
-          <label for="name">Полное имя</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Ваше Имя"
-            required=""
-          />
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Ваш email"
-            required=""
-          />
-          <label for="subject">Предмет дискуссии</label>
-          <input
-            type="text"
-            name="subject"
-            id="subject"
-            placeholder="О чем речь?"
-            required=""
-          />
-          <label for="message">Ваше сообщение</label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Тут можно поделиться своими мыслями."
-            rows="6"
-            cols="50"
-            wrap="hard"
-            required=""
-            tabindex="0"
-          ></textarea>
-          <button type="submit" name="submit">Отправить обращение</button>
+        <form action="" name="contactForm">
+          <div class="contact__form-inner-container">
+            <div class="contact__form-item name">
+              <label for="name">ПОЛНОЕ ИМЯ</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="ВАШЕ ИМЯ"
+                class="input-field"
+              />
+              <span class="error" id="nameError"></span>
+            </div>
+            <div class="contact__form-item email">
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="ВАШ EMAIL"
+                class="input-field"
+              />
+              <span class="error" id="emailError"></span>
+            </div>
+            <div class="contact__form-item subject">
+              <label for="subject">ТЕМА ОБРАЩЕНИЯ</label>
+              <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="О чем речь?"
+              class="input-field"
+              />
+            </div>
+            <div class="contact__form-item message">
+              <label for="message">ВАШЕ СООБЩЕНИЕ</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Тут можно поделиться своими мыслями."
+                rows="6"
+                cols="50"
+                wrap="hard"
+                class="input-field"
+              ></textarea>
+              <span class="error" id="inputError"></span>
+            </div>
+            <button type="submit" name="submit" class="contact__form-button">Отправить обращение</button>
+          </div>
         </form>
       </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-    <script src="/src/js/skills.js"></script>
+    <footer>
+      designed by group #2 91 frontend ITgirlsschool
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
   <script type="module" src="/src/js/title_page.js"></script>
+  <script src="/src/js/skills.js"></script>
   <script src="/src/js/about.js"></script>
+  <script src="/src/js/contacts.js"></script>
 </body>
 
 </html>

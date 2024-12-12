@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const formattedDate = format(currentDate, 'dd-MM-yyyy HH:mm:ss')
   console.log(`Текущая дата и время: ${formattedDate}`)
 
-  const currentTime = document.getElementById('currentTime')
+  const currentTime = document.getElementById('current-time')
   currentTime.textContent = ` ${formattedDate}`
 })
 // Создание переключателя темы
@@ -107,4 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
   }
+})
+// Получаем элементы бургера и навигации
+const burgerMenu = document.querySelector('.burger-menu')
+const nav = document.querySelector('.header__nav')
+
+// Обработчик для переключения классов при клике на бургер-меню
+burgerMenu.addEventListener('click', () => {
+  burgerMenu.classList.toggle('open') // Добавляем анимацию бургер-меню
+  nav.classList.toggle('open') // Показываем или скрываем меню
 })
