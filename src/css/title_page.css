@@ -150,7 +150,6 @@ body {
   background-color: #333;
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
-  /* cursor: auto; */
 }
 
 .promo__content {
@@ -366,7 +365,6 @@ video {
   /* Стили для бургер-меню */
   .burger-menu {
     display: block;
-    /* cursor: pointer; */
   }
 
   .burger-menu div {
