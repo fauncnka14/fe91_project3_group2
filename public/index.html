@@ -80,23 +80,34 @@
     </div>
 
   <!--Skills-->
+  <section id="skills">
   <h2 class="skills-h2">Навыки</h2>
   <h3 class="skills-h3">Стек технологий</h3>
   <div class="skills-wrapper">
-    <div class="skills-cards1">
-      <div class="cards1__html">HTML5</div>
-      <div class="cards1__css3">CSS3</div>
-      <div class="cards1__js">JS</div>
-      <div class="cards1__figma">Figma</div>
-    </div>
-    <div class="skills-cards2">
-      <div class="cards2__react">React</div>
-      <div class="cards2__git">Git/GitHub</div>
-      <div class="cards2__git">Bootstrap</div>
-      <div class="cards2__sass">SASS</div>
+    <div class="skills-cards">
+      <div class="cards__git">
+        <p>Git/GitHub</p></div>
+      <div class="cards__react">
+        <p>React</p>
+      </div>
+      <div class="cards__js">
+        <p>JS</p>
+      </div>
+      <div class="cards__sass">
+        <p>SASS</p>
+      </div>
     </div>
   </div>
-
+  <div class="chart-container">
+    <p class="bar-text">Создание сайтов</p>
+    <canvas id="chart1" width="500" height="50"></canvas>
+    <p class="bar-text">Soft skills</p>
+    <canvas id="chart2" width="500" height="50"></canvas>
+    <p class="bar-text">Навык выставлять себе навыки</p>
+    <canvas id="chart3" width="500" height="50"></canvas>
+  </div>
+</section>
+  
   <section class="about">
     <!-- <div class="about__container">
       <h1 class="about__title">Обо мне</h1>
@@ -181,6 +192,9 @@
         </form>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="/src/js/skills.js"></script>
   <script type="module" src="/src/js/title_page.js"></script>
   <script src="/src/js/about.js"></script>
 </body>
