@@ -9,12 +9,45 @@ document.addEventListener('DOMContentLoaded', function () {
   const scrollbar = Scrollbar.init(container, options)
 })
 
-$(document).ready(function () {
-  $('.images__item').mouseenter(function () {
-    $(this).find('.images__item-overlay').fadeIn(400)
-  })
+document.addEventListener('DOMContentLoaded', function () {
+  const swiperContainer = document.querySelector('.swiper-container')
 
-  $('.images__item').mouseleave(function () {
-    $(this).find('.images__item-overlay').fadeOut(400)
-  })
+  function initSwiper() {
+    if (window.innerWidth <= 1024) {
+      if (!swiperContainer.swiper) {
+        new Swiper('.swiper-container', {
+          loop: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          slidesPerView: 'auto',
+          spaceBetween: 80,
+          centeredSlides: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          effect: 'coverflow',
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 10,
+            depth: 80,
+            modifier: 5,
+            slideShadows: true,
+          },
+        })
+      }
+    } else {
+      if (swiperContainer.swiper) {
+        swiperContainer.swiper.destroy()
+      }
+    }
+  }
+
+  // Инициализируем Swiper при загрузке
+  initSwiper()
+
+  // Отслеживаем изменение ширины экрана
+  window.addEventListener('resize', initSwiper)
 })
