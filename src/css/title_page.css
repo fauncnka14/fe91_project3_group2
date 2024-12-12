@@ -48,8 +48,12 @@ body {
   align-items: center;
 }
 
+.header__box--logo img {
+  margin: 0;
+}
+
 .header__logo {
-  width: 80px;
+  width: 4rem;
   height: auto;
   margin-right: 1rem;
   border-radius: 50%;
@@ -147,8 +151,8 @@ body {
   position: relative;
   font-size: 35px;
   line-height: 1.6;
-  width: 400px;
-  height: 200px;
+  width: 25rem;
+  height: 12.5rem;
   text-align: left;
   overflow: hidden;
 }
@@ -162,12 +166,13 @@ body {
   letter-spacing: 4px;
   border: solid 0.5px;
   border-radius: 5px;
-  padding: 4px 15px;
+  padding: 0.25rem 0.938rem;
   box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
+  margin: 0 0 0 1rem;
 }
 
 #current-time {
-  margin: 5px;
+  margin: 0.313rem;
 }
 
 .video-container {
@@ -262,7 +267,7 @@ video {
 
   .promo__offer--lable {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-transform: uppercase;
     margin: 0 2rem 3rem 0;
     text-align: center;
@@ -280,16 +285,28 @@ video {
   }
 
   .promo__content {
-    font-size: 25px;
-    width: 500px;
+    font-size: 1.563rem;
+    width: 31.25rem;
     height: auto;
     margin-bottom: 2rem;
+  }
+
+  .video-container {
+    box-shadow: 0 4px 10px rgba(0, 0, 0/ 20%);
+    padding: 1rem 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media (width <= 800px) {
+  .header__box--date {
+    margin: 0;
+  }
+
   .promo {
-    flex-direction: column-reverse; /* Меняем порядок: сначала видео, потом offer */
+    flex-direction: column-reverse;
   }
 
   .promo__offer {
@@ -315,21 +332,20 @@ video {
   }
 
   .header__nav {
-    display: none; /* Скрыть меню по умолчанию на мобильных устройствах */
+    display: none;
     flex-direction: column;
     gap: 1rem;
     position: absolute;
-    top: 60px;
+    top: 3.75rem;
     right: 0;
-    background-color: #fff;
     box-shadow: 0 4px 15px var(--color-grey);
     width: 100%;
     padding: 1rem;
   }
 
   .header__nav.open {
-    display: flex; /* Показать меню при активации */
-    margin-top: 50px;
+    display: flex;
+    margin-top: 3.125rem;
     margin-bottom: 1rem;
   }
 
@@ -340,10 +356,10 @@ video {
   }
 
   .burger-menu div {
-    width: 30px;
-    height: 4px;
-    background-color: #333;
-    margin: 5px 0;
+    width: 1.875rem;
+    height: 0.25rem;
+    background-color: var(--color-text);
+    margin: 0.313rem 0;
     transition: 0.3s;
   }
 
@@ -351,7 +367,7 @@ video {
   .burger-menu.open div:nth-child(1) {
     transform: rotate(45deg);
     position: relative;
-    top: 9px;
+    top: 0.563rem;
   }
 
   .burger-menu.open div:nth-child(2) {
@@ -361,6 +377,6 @@ video {
   .burger-menu.open div:nth-child(3) {
     transform: rotate(-45deg);
     position: relative;
-    top: -9px;
+    top: -0.563rem;
   }
 }
