@@ -6,7 +6,7 @@ body {
 .about {
   color: var(--color-text);
   background-color: var(--color-bg);
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 400;
   margin: 0 5rem;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 .about__title {
-  font-family: 'Spectral', serif;
+  font-family: Spectral, serif;
   font-size: 4rem;
   text-align: left;
   white-space: nowrap;
@@ -107,7 +107,7 @@ body {
   overflow: hidden;
   height: 32rem;
   transition: all 0.4s ease;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+  box-shadow: 4px 4px 10px rgb(0 0 0 / 90%);
 }
 
 .images__item img {
@@ -120,11 +120,8 @@ body {
 .images__item-overlay {
   padding: 1rem;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  background-color: rgb(0 0 0 / 50%);
   color: white;
   display: flex;
   justify-content: center;
