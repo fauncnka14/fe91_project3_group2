@@ -25,6 +25,12 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/dist/date-fns.min.js"></script>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
+      integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+    </script>
   <link rel="stylesheet" href="/src/css/skills.css" />
 
   <title>Frontend-developer starter page</title>
@@ -186,6 +192,54 @@
       </div>
     </div>
   </section>
+  <!-- My Projects -->
+  <section id="portfolio" aria-label="Мои работы">
+    <div class="projects__container">
+      <h2 class="projects__title">Мои работы</h2>
+      <div id="cards__container">
+        <div class="card__container">
+          <div class="front__card"></div>
+          <div class="back__card">
+            <h4 class="top__text">Сайт <br> для преподавателя <br> английского языка</h4>
+            <p class="projects__about">На сайте вы найдёте пять ключевых разделов, среди которых “Обо мне”, “Запросы”, “Образование и опыт”, “Консультации” и “Отзывы”. Каждый из них продуман до мелочей, чтобы дать вам максимальную информацию о работе преподавателя <br> <br>
+              В разделе “Результаты моих учеников” расположен элегантный слайдер, который не только привлекает внимание, но и плавно перелистывается в автоматическом режиме или по вашему желанию <br> <br>
+              Одна из удобных функций сайта — плавная прокрутка к нужному разделу при клике на пункты меню, которое всегда остаётся на виду. Также в интерфейсе реализована анимация элементов при наведении курсора, что делает его интерактивным и приятным для пользователя <br> <br>
+              Не забыли и про адаптивный дизайн, который позволяет удобно просматривать сайт как на компьютере, так и на мобильных устройствах
+          </p>
+          <!-- <h4 class="bottom__text">Сайт доступен по ссылке: clck.ru/3F6VwA</h4> -->
+           <a class="projects__btn" href="https://clck.ru/3F6VwA">Перейти на сайт</a>
+        </div>
+      </div>
+      
+      <div class="card__container">
+        <div class="front__card"></div>
+        <div class="back__card">
+          <h4 class="top__text">Сайт <br> для психолога</h4>
+          <p class="projects__about">
+            Сайт состоит из четырех основных разделов: «Обо мне», «Услуги», «Вопросы» и «Дипломы» <br> <br> Блок «Дипломы» оформлен в виде слайдера, что позволяет удобно и быстро просмотреть информацию <br> <br> Блок «Часто задаваемые вопросы» также имеет интерактивный формат — ответы на вопросы раскрываются одним нажатием <br> <br> Интерфейс сайта удобен и интуитивно понятен, а плавный скролл более приятен глазу. каждый раздел доступен как с верхнего, так и с нижнего меню <br> <br> Среди других особенностей — адаптивный дизайн под мобильные и планшетные устройства. По пожеланию заказчика я также сделала возможным его чтение для слабовидящих (при использовании расширения Screen Reader)
+          </p>
+          <a class="projects__btn" href="https://elenashvarts.ru">Перейти на сайт</a>
+        </div>
+      </div>
+      
+      <div class="card__container">
+        <div class="front__card"></div>
+        <div class="back__card">
+          <h4 class="top__text">Сайт <br> для преподавателя <br> английского языка</h4>
+          <p class="projects__about">
+            На сайте вы найдёте пять ключевых разделов, среди которых “Обо мне”, “Запросы”, “Образование и опыт”, “Консультации” и “Отзывы”. Каждый из них продуман до мелочей, чтобы дать вам максимальную информацию о работе преподавателя <br> <br>
+              В разделе “Результаты моих учеников” расположен элегантный слайдер, который не только привлекает внимание, но и плавно перелистывается в автоматическом режиме или по вашему желанию <br> <br>
+              Одна из удобных функций сайта — плавная прокрутка к нужному разделу при клике на пункты меню, которое всегда остаётся на виду. Также в интерфейсе реализована анимация элементов при наведении курсора, что делает его интерактивным и приятным для пользователя <br> <br>
+              Не забыли и про адаптивный дизайн, который позволяет удобно просматривать сайт как на компьютере, так и на мобильных устройствах
+          </p>
+          <a class="projects__btn" href="https://clck.ru/3F6VwA">Перейти на сайт</a>
+        </div>
+      </div>
+    </div>
+    <p class="projects__instruction">Нажмите на изображение, чтобы узнать больше</p>
+  </div>
+</section>
+  <!-- My Projects -->
 <section class="contact" id="contact">
       <h2 class="contact__h2">Контакты</h2>
       <aside class="contact__sidebar">
@@ -264,6 +318,7 @@
   <script type="module" src="/src/js/title_page.js"></script>
   <script src="/src/js/skills.js"></script>
   <script src="/src/js/about.js"></script>
+  <script src="/src/js/projects.js"></script>
   <script src="/src/js/contacts.js"></script>
 </body>
 
