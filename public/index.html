@@ -37,16 +37,13 @@
 
   <title>Frontend-developer starter page</title>
 </head>
-  <body>
-   <div data-scroll-container>
+
+<body>
+  <div data-scroll-container>
     <section class="wrapper__tp">
       <header class="header__box">
         <div class="header__box--logo">
-          <img
-            src="/public/assets/images/logo.svg"
-            alt="Логотип"
-            class="header__logo"
-          />
+          <img src="/public/assets/images/logo.svg" alt="Логотип" class="header__logo" />
         </div>
         <div class="header__box--date">
           <p id="current-time"></p>
@@ -81,12 +78,7 @@
             <button class="offer__btn--achievements" id="achievementsBtn">
               Мои достижения
             </button>
-            <button
-              type="button"
-              id="btnSwitch"
-              class="offer__btn--switch"
-              data-js-theme-switcher
-            >
+            <button type="button" id="btnSwitch" class="offer__btn--switch" data-js-theme-switcher>
               Переключить тему
             </button>
           </div>
@@ -94,10 +86,7 @@
 
         <div class="video-container">
           <video autoplay muted loop>
-            <source
-              src="/public/assets/video/7026676-uhd_2160_3840_24fps.mp4"
-              type="video/mp4"
-            />
+            <source src="/public/assets/video/7026676-uhd_2160_3840_24fps.mp4" type="video/mp4" />
             Ваш браузер не поддерживает видео.
           </video>
         </div>
@@ -108,34 +97,35 @@
       </article>
     </section>
 
-  <!--Skills-->
-  <section id="skills">
-  <h2 class="skills-h2">Навыки</h2>
-  <h3 class="skills-h3">Стек технологий</h3>
-  <div class="skills-wrapper">
-    <div class="skills-cards">
-      <div class="cards__git">
-        <p>Git/GitHub</p></div>
-      <div class="cards__react">
-        <p>React</p>
+    <!--Skills-->
+    <section id="skills">
+      <h2 class="skills-h2">Навыки</h2>
+      <h3 class="skills-h3">Стек технологий</h3>
+      <div class="skills-wrapper">
+        <div class="skills-cards">
+          <div class="cards__git">
+            <p>Git/GitHub</p>
+          </div>
+          <div class="cards__react">
+            <p>React</p>
+          </div>
+          <div class="cards__js">
+            <p>JS</p>
+          </div>
+          <div class="cards__sass">
+            <p>SASS</p>
+          </div>
+        </div>
       </div>
-      <div class="cards__js">
-        <p>JS</p>
+      <div class="chart-container">
+        <p class="bar-text">Создание сайтов</p>
+        <canvas id="chart1" width="500" height="50"></canvas>
+        <p class="bar-text">Soft skills</p>
+        <canvas id="chart2" width="500" height="50"></canvas>
+        <p class="bar-text">Навык выставлять себе навыки</p>
+        <canvas id="chart3" width="500" height="50"></canvas>
       </div>
-      <div class="cards__sass">
-        <p>SASS</p>
-      </div>
-    </div>
-  </div>
-  <div class="chart-container">
-    <p class="bar-text">Создание сайтов</p>
-    <canvas id="chart1" width="500" height="50"></canvas>
-    <p class="bar-text">Soft skills</p>
-    <canvas id="chart2" width="500" height="50"></canvas>
-    <p class="bar-text">Навык выставлять себе навыки</p>
-    <canvas id="chart3" width="500" height="50"></canvas>
-  </div>
-</section>
+    </section>
 
     <section class="about" id="about__section">
       <div class="about__container">
@@ -192,8 +182,7 @@
             разработчика под другим углом.</div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   <!-- My Projects -->
   <section id="portfolio" aria-label="Мои работы">
     <div class="projects__container">
@@ -269,24 +258,12 @@
           <div class="contact__form-inner-container">
             <div class="contact__form-item name">
               <label for="name">ПОЛНОЕ ИМЯ</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="ВАШЕ ИМЯ"
-                class="input-field"
-              />
+              <input type="text" name="name" id="name" placeholder="Ваше имя" class="input-field" />
               <span class="error" id="nameError"></span>
             </div>
             <div class="contact__form-item email">
               <label for="email">EMAIL</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="ВАШ EMAIL"
-                class="input-field"
-              />
+              <input type="email" name="email" id="email" placeholder="Ваш email" class="input-field" />
               <span class="error" id="emailError"></span>
             </div>
             <div class="contact__form-item subject">
@@ -295,15 +272,8 @@
             </div>
             <div class="contact__form-item message">
               <label for="message">ВАШЕ СООБЩЕНИЕ</label>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Тут можно поделиться своими мыслями."
-                rows="6"
-                cols="50"
-                wrap="hard"
-                class="input-field"
-              ></textarea>
+              <textarea name="message" id="message" placeholder="Тут можно поделиться своими мыслями." rows="6"
+                cols="50" wrap="hard" class="input-field"></textarea>
               <span class="error" id="inputError"></span>
             </div>
             <button type="submit" name="submit" class="contact__form-button">Отправить обращение</button>
