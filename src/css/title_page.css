@@ -20,6 +20,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: auto;
 }
 
 .wrapper__tp {
@@ -48,8 +49,12 @@ body {
   align-items: center;
 }
 
+.header__box--logo img {
+  margin: 0;
+}
+
 .header__logo {
-  width: 80px;
+  width: 4rem;
   height: auto;
   margin-right: 1rem;
   border-radius: 50%;
@@ -68,8 +73,9 @@ body {
 }
 
 .header__nav li {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .header__nav a {
@@ -93,8 +99,11 @@ body {
   justify-content: space-around;
   gap: 5rem;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
   width: 100%;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  padding: 3.5rem 0 2rem;
 }
 
 .promo__offer {
@@ -104,7 +113,7 @@ body {
 
 .promo__offer--lable {
   margin-bottom: 0.2rem;
-  font-size: 1.563rem;
+  font-size: 2rem;
 }
 
 .promo__offer--title h1 {
@@ -122,17 +131,19 @@ body {
 .offer__btn--achievements,
 .offer__btn--switch {
   text-decoration: none;
-  color: var(--color-bg);
-  font-size: 1.125rem;
+  color: var(--color-text);
+  font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
-  background-color: var(--color-text);
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
+  background-color: var(--color-bg);
+  padding: 1.2rem;
+  border-radius: 10px;
   transition:
     background-color 0.3s ease,
     transform 0.2s ease;
   box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  white-space: nowrap;
+  width: 17rem;
 }
 
 .offer__btn--achievements:hover,
@@ -140,15 +151,14 @@ body {
   background-color: #333;
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
-  cursor: auto;
 }
 
 .promo__content {
   position: relative;
   font-size: 35px;
   line-height: 1.6;
-  width: 400px;
-  height: 200px;
+  width: 25rem;
+  height: 12.5rem;
   text-align: left;
   overflow: hidden;
 }
@@ -161,28 +171,30 @@ body {
   line-height: 1.6;
   letter-spacing: 4px;
   border: solid 0.5px;
-  border-radius: 5px;
-  padding: 4px 15px;
+  border-radius: 10px;
+  padding: 0.25rem 0.938rem;
   box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
+  margin: 0 0 0 1rem;
 }
 
 #current-time {
-  margin: 5px;
+  margin: 0.313rem;
 }
 
 .video-container {
   width: 28.125rem;
   height: 37.5rem;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0/ 20%);
-  padding: 0 4rem 0 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0/ 100%);
+  padding: 1rem 2rem 1rem 1rem;
 }
 
 video {
-  width: 100%; /* Растягивает видео на всю ширину */
-  height: 100%; /* Растягивает видео на всю высоту */
-  object-fit: cover; /* Обрезка видео внутри контейнера */
-  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: solid 1.5px var(--color-bg);
 }
 
 .achievements {
@@ -192,7 +204,7 @@ video {
 }
 
 .achievements__title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   font-family: Spectral, serif;
   margin-bottom: 2rem;
@@ -208,7 +220,7 @@ video {
 .achievement-card {
   background: #fff;
   border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
   padding: 1.5rem;
   transition:
@@ -257,39 +269,51 @@ video {
 @media (width <= 950px) {
   .promo {
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 
   .promo__offer--lable {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 2rem;
     text-transform: uppercase;
     margin: 0 2rem 3rem 0;
     text-align: center;
-    border: 1px solid var(--color-grey);
+    border: 2px solid var(--color-grey);
     border-radius: 10px;
     padding: 1rem;
     font-family: Spectral, serif;
   }
 
   .promo__offer--title h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 400;
     margin: 1rem 0;
     font-family: Spectral, serif;
   }
 
   .promo__content {
-    font-size: 25px;
-    width: 500px;
+    font-size: 2rem;
+    width: 31.25rem;
     height: auto;
     margin-bottom: 2rem;
+  }
+
+  .video-container {
+    box-shadow: 0 4px 10px rgba(0, 0, 0/ 20%);
+    padding: 1rem 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media (width <= 800px) {
+  .header__box--date {
+    margin: 0;
+  }
+
   .promo {
-    flex-direction: column-reverse; /* Меняем порядок: сначала видео, потом offer */
+    flex-direction: column-reverse;
   }
 
   .promo__offer {
@@ -298,7 +322,7 @@ video {
   }
 
   .promo__offer--lable {
-    margin: 0 0 2rem;
+    margin: 0.5rem 2rem;
     font-family: Spectral, serif;
   }
 
@@ -307,43 +331,48 @@ video {
   }
 
   .promo__content {
-    margin: 0 0 3rem 2rem;
+    margin: 3rem 0 6rem 2rem;
   }
 
   .promo__offer--btns {
-    margin: 0 0 0 2rem;
+    margin: 0 0 2rem 2rem;
   }
 
   .header__nav {
-    display: none; /* Скрыть меню по умолчанию на мобильных устройствах */
+    display: none;
     flex-direction: column;
     gap: 1rem;
     position: absolute;
-    top: 60px;
+    top: 3.75rem;
     right: 0;
-    background-color: #fff;
     box-shadow: 0 4px 15px var(--color-grey);
     width: 100%;
     padding: 1rem;
   }
 
   .header__nav.open {
-    display: flex; /* Показать меню при активации */
-    margin-top: 50px;
-    margin-bottom: 1rem;
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .header__nav.open li {
+    margin-bottom: 2rem;
+  }
+
+  .achievements__title {
+    font-size: 2.5rem;
   }
 
   /* Стили для бургер-меню */
   .burger-menu {
     display: block;
-    cursor: pointer;
   }
 
   .burger-menu div {
-    width: 30px;
-    height: 4px;
-    background-color: #333;
-    margin: 5px 0;
+    width: 1.875rem;
+    height: 0.25rem;
+    background-color: var(--color-text);
+    margin: 0.313rem 0;
     transition: 0.3s;
   }
 
@@ -351,7 +380,7 @@ video {
   .burger-menu.open div:nth-child(1) {
     transform: rotate(45deg);
     position: relative;
-    top: 9px;
+    top: 0.563rem;
   }
 
   .burger-menu.open div:nth-child(2) {
@@ -361,6 +390,120 @@ video {
   .burger-menu.open div:nth-child(3) {
     transform: rotate(-45deg);
     position: relative;
-    top: -9px;
+    top: -0.563rem;
+  }
+}
+
+@media (width <= 580px) {
+  .header__box--date {
+    display: none;
+  }
+
+  .header__nav.open li {
+    font-size: 1rem;
+  }
+
+  .promo__offer {
+    padding: 0;
+    width: 100%;
+  }
+
+  .offer__btn--achievements,
+  .offer__btn--switch {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.8rem;
+    white-space: nowrap;
+    width: 11rem;
+  }
+
+  .promo__offer--btns {
+    margin: 0 0 0 2.5rem;
+  }
+
+  .promo__offer--lable {
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 1rem;
+    max-width: 100%;
+    margin: 1rem;
+  }
+
+  .promo__content {
+    max-width: 80%;
+    font-size: 1.5rem;
+    margin: 3rem 0 4rem 2.5rem;
+  }
+
+  .video-container {
+    padding: 0;
+    width: 90%;
+  }
+}
+
+@media (width <= 500px) {
+  .header__nav.open {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    z-index: 1000;
+    background-color: var(--color-bg);
+    font-size: 1rem;
+  }
+
+  .header__nav.open ul {
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 0;
+  }
+
+  .header__nav.open li {
+    margin-bottom: 0.5rem;
+    border-bottom: solid 1px var(--color-grey);
+    width: 9.375rem;
+  }
+
+  .offer__btn--achievements,
+  .offer__btn--switch {
+    width: 10.5rem;
+  }
+}
+
+@media (width <= 400px) {
+  .promo__offer--btns {
+    flex-direction: column-reverse;
+  }
+
+  .offer__btn--achievements,
+  .offer__btn--switch {
+    width: 9rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .promo__offer--lable {
+    font-weight: 350;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .promo {
+    gap: 0;
+  }
+
+  .promo__content {
+    font-size: 1.1rem;
+    margin: 0 0 4rem 2.5rem;
+  }
+
+  .video-container {
+    width: 20rem;
+    height: auto;
+  }
+
+  video {
+    width: 80%;
+    height: 80%;
   }
 }
