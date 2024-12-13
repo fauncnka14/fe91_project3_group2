@@ -1,11 +1,4 @@
-window.addEventListener('load', (event) => {
-  new cursoreffects.fairyDustCursor({
-    colors: ['#00000', '#ffffff', '#0000ff'],
-  })
-})
-
 // Добавление библиотеки и создание текущей даты
-
 document.addEventListener('DOMContentLoaded', () => {
   const currentDate = new Date()
   const formattedDate = dateFns.format(currentDate, 'dd-MM-yyyy HH:mm:ss')
@@ -14,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentTime = document.getElementById('current-time')
   currentTime.textContent = ` ${formattedDate}`
 })
+
 // Создание переключателя темы
 class ThemeSwithcer {
   selectors = {
