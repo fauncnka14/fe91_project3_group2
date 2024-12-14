@@ -13,23 +13,37 @@
   font-family: Inter, sans-serif;
   font-weight: 500;
   margin-bottom: 2.5rem;
+  font-size: 1.2 rem;
 }
 
-.skills-wrapper {
+/*.hard-wrapper {
   max-width: 70%;
   margin: 0 auto;
-}
+}*/
 
-.skills-cards {
+/*.skills-cards {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   margin-bottom: 2.5rem;
+}*/
+
+.skills-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills-cards1,
+.skills-cards2 {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .cards__git {
-  border: 3px solid black;
+  border: 3px solid var(--color-text);
   width: 15rem;
+  box-shadow: 4px 4px 10px var(--color-text);
   height: 15rem;
   text-align: center;
   transition:
@@ -40,21 +54,26 @@
   align-items: center;
   color: var(--color-text);
   background-color: var(--color-bg);
-  font-family: Inter, sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
+  border-radius: 10px;
+  font-family: Spectral, sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
 }
 
 .cards__git:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 15px rgb(0 0 0 / 50%);
+  background-color: var(--color-text);
+  color: var(--color-bg);
 }
 
 .cards__react {
-  border: 3px solid black;
+  border: 3px solid var(--color-text);
   width: 15rem;
-  text-align: center;
+  box-shadow: 4px 4px 10px var(--color-text);
   height: 15rem;
+  text-align: center;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -63,21 +82,26 @@
   align-items: center;
   color: var(--color-text);
   background-color: var(--color-bg);
-  font-family: Inter, sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
+  border-radius: 10px;
+  font-family: Spectral, sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
 }
 
 .cards__react:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 15px rgb(0 0 0 / 50%);
+  background-color: var(--color-text);
+  color: var(--color-bg);
 }
 
 .cards__js {
-  border: 3px solid black;
+  border: 3px solid var(--color-text);
   width: 15rem;
-  text-align: center;
+  box-shadow: 4px 4px 10px var(--color-text);
   height: 15rem;
+  text-align: center;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -86,21 +110,26 @@
   align-items: center;
   color: var(--color-text);
   background-color: var(--color-bg);
-  font-family: Inter, sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
+  border-radius: 10px;
+  font-family: Spectral, sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
 }
 
 .cards__js:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 15px rgb(0 0 0 / 50%);
+  background-color: var(--color-text);
+  color: var(--color-bg);
 }
 
 .cards__sass {
-  border: 3px solid black;
+  border: 3px solid var(--color-text);
   width: 15rem;
-  text-align: center;
+  box-shadow: 4px 4px 10px var(--color-text);
   height: 15rem;
+  text-align: center;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -109,14 +138,18 @@
   align-items: center;
   color: var(--color-text);
   background-color: var(--color-bg);
-  font-family: Inter, sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
+  border-radius: 10px;
+  font-family: Spectral, sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
 }
 
 .cards__sass:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 15px rgb(0 0 0 / 50%);
+  background-color: var(--color-text);
+  color: var(--color-bg);
 }
 
 .bar-text {
@@ -131,10 +164,11 @@
 
 .chart-container {
   max-width: 19rem;
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
   gap: 15px;
-  margin: 0 auto; /* Расстояние между графиками */
+  align-content: center;
+  /*margin: 0 auto;*/
 }
 
 canvas {
@@ -143,4 +177,84 @@ canvas {
   /* Центровка графиков */
   background: #1b1b1b; /* Тёмный фон для каждого прогресс-бара */
   border-radius: 20px; /* Закруглённые углы для красоты */
+}
+
+/*media for skills*/
+@media (min-width: 769px) and (max-width: 1023px) {
+  .skills-wrapper {
+    display: block;
+  }
+  .hard-wrapper {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  .chart-container {
+    max-width: 19rem;
+    margin: 0 auto;
+  }
+  .skills-h2 {
+    font-size: 3rem;
+  }
+  .cards__git,
+  .cards__react,
+  .cards__js,
+  .cards__sass {
+    width: 14rem;
+    height: 14rem;
+    font-size: 1.2rem;
+  }
+  .bar-text {
+    font-size: 1rem;
+  }
+  .skills-h3 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .skills-wrapper {
+    display: block;
+  }
+  .skills-cards1 {
+    display: block;
+  }
+  .skills-h2 {
+    font-size: 2.5rem;
+  }
+  .skills-h3 {
+    font-size: 1rem;
+    margin-bottom: 1.1rem;
+  }
+  .cards__git,
+  .cards__react,
+  .cards__js,
+  .cards__sass {
+    width: 13rem;
+    height: 13rem;
+    font-size: 1.1rem;
+  }
+  .cards__git {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .cards__react {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .skills-cards2 {
+    display: block;
+  }
+  .cards__js {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .cards__sass {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .bar-text {
+    font-size: 1rem;
+  }
+  .chart-container {
+    margin: 0 auto;
+  }
 }
