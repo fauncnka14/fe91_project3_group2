@@ -51,7 +51,8 @@ function createHorizontalBarChart(canvasId, value, maxValue, gradientColors) {
         },
       },
       animation: {
-        duration: 1000, // Анимация
+        duration: 2000, // Время анимации в миллисекундах
+        easing: 'linear', // Анимация
       },
     },
     plugins: [ChartDataLabels],
