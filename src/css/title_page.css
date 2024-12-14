@@ -74,7 +74,7 @@ body {
 
 .header__nav li {
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 400;
   white-space: nowrap;
   font-family: Inter, sans-serif;
 }
@@ -115,7 +115,7 @@ body {
 .promo__offer--lable {
   margin-bottom: 0.2rem;
   font-size: 2rem;
-  font-family: Inter, sans-serif;
+  font-family: Spectral, serif;
 }
 
 .promo__offer--title h1 {
@@ -136,7 +136,7 @@ body {
   text-decoration: none;
   color: var(--color-bg);
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   background-color: var(--color-text);
   padding: 1.2rem;
@@ -161,7 +161,8 @@ body {
   font-family: Inter, sans-serif;
   position: relative;
   font-size: 35px;
-  line-height: 1.6;
+  font-weight: 300;
+  line-height: 1.4;
   width: 25rem;
   height: 12.5rem;
   text-align: left;
@@ -200,7 +201,7 @@ video {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  border: solid 1.5px var(--color-text);
+  box-shadow: 4px 4px 10px var(--color-text);
 }
 
 .achievements {

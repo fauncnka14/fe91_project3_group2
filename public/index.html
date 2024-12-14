@@ -26,11 +26,9 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script src="/node_modules/date-fns/cdn.js"></script>
-  <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
-      integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
+    integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
 
 
@@ -56,17 +54,17 @@
         </div>
         <nav class="header__nav">
           <ul>
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#skills">Навыки</a></li>
-            <li><a href="#portfolio">Кейсы</a></li>
-            <li><a href="#contact">Контакты</a></li>
+            <li><a href="#about">ОБО МНЕ</a></li>
+            <li><a href="#skills">НАВЫКИ</a></li>
+            <li><a href="#portfolio">КЕЙСЫ</a></li>
+            <li><a href="#contact">КОНТАКТЫ</a></li>
           </ul>
         </nav>
       </header>
       <section class="promo">
         <div class="promo__offer">
           <div class="promo__offer--lable">
-            Сайт-портфолио frontend-разработчицы
+            САЙТ-ПОРТФОЛИО FRONTEND-РАЗРАБОТЧИЦЫ
           </div>
           <div class="promo__offer--title">
             <h1>Hello, world!</h1>
@@ -102,33 +100,33 @@
       <h2 class="skills-h2">Навыки</h2>
       <h3 class="skills-h3">Стек технологий</h3>
       <div class="skills-wrapper">
-      <div class="hard-wrapper">
-        <div class="skills-cards1">
-          <div class="cards__git">
-            <p>Git/GitHub</p>
-          </div>
-          <div class="cards__react">
-            <p>React</p>
-          </div>
+        <div class="hard-wrapper">
+          <div class="skills-cards1">
+            <div class="cards__git">
+              <p>Git/GitHub</p>
+            </div>
+            <div class="cards__react">
+              <p>React</p>
+            </div>
           </div>
           <div class="skills-cards2">
-          <div class="cards__js">
-            <p>JS</p>
-          </div>
-          <div class="cards__sass">
-            <p>SASS</p>
+            <div class="cards__js">
+              <p>JS</p>
+            </div>
+            <div class="cards__sass">
+              <p>SASS</p>
+            </div>
           </div>
         </div>
+        <div class="chart-container">
+          <p class="bar-text">Создание сайтов</p>
+          <canvas id="chart1" width="500" height="50"></canvas>
+          <p class="bar-text">Soft skills</p>
+          <canvas id="chart2" width="500" height="50"></canvas>
+          <p class="bar-text">Навык выставлять себе навыки</p>
+          <canvas id="chart3" width="500" height="50"></canvas>
         </div>
-      <div class="chart-container">
-        <p class="bar-text">Создание сайтов</p>
-        <canvas id="chart1" width="500" height="50"></canvas>
-        <p class="bar-text">Soft skills</p>
-        <canvas id="chart2" width="500" height="50"></canvas>
-        <p class="bar-text">Навык выставлять себе навыки</p>
-        <canvas id="chart3" width="500" height="50"></canvas>
       </div>
-    </div>
     </section>
 
     <section class="about" id="about">
@@ -187,55 +185,73 @@
         </div>
       </div>
     </section>
-  <!-- My Projects -->
-  <section id="portfolio" aria-label="Мои работы">
-    <div class="projects__container">
-      <h2 class="projects__title">Мои работы</h2>
-      <div id="cards__container">
-        <div class="card__container">
-          <div class="front__card"></div>
-          <div class="back__card">
-            <h4 class="top__text">Сайт <br> для преподавателя <br> английского языка</h4>
-            <p class="projects__about">На сайте вы найдёте пять ключевых разделов, среди которых “Обо мне”, “Запросы”, “Образование и опыт”, “Консультации” и “Отзывы”. Каждый из них продуман до мелочей, чтобы дать вам максимальную информацию о работе преподавателя <br> <br>
-              В разделе “Результаты моих учеников” расположен элегантный слайдер, который не только привлекает внимание, но и плавно перелистывается в автоматическом режиме или по вашему желанию <br> <br>
-              Одна из удобных функций сайта — плавная прокрутка к нужному разделу при клике на пункты меню, которое всегда остаётся на виду. Также в интерфейсе реализована анимация элементов при наведении курсора, что делает его интерактивным и приятным для пользователя <br> <br>
-              Не забыли и про адаптивный дизайн, который позволяет удобно просматривать сайт как на компьютере, так и на мобильных устройствах
-          </p>
-          <!-- <h4 class="bottom__text">Сайт доступен по ссылке: clck.ru/3F6VwA</h4> -->
-           <a class="projects__btn" href="https://clck.ru/3F6VwA">Перейти на сайт</a>
+    <!-- My Projects -->
+    <section id="portfolio" aria-label="Мои работы">
+      <div class="projects__container">
+        <h2 class="projects__title">Мои работы</h2>
+        <div id="cards__container">
+          <div class="card__container">
+            <div class="front__card"></div>
+            <div class="back__card">
+              <h4 class="top__text">Сайт <br> для преподавателя <br> английского языка</h4>
+              <p class="projects__about">На сайте вы найдёте пять ключевых разделов, среди которых “Обо мне”, “Запросы”,
+                “Образование и опыт”, “Консультации” и “Отзывы”. Каждый из них продуман до мелочей, чтобы дать вам
+                максимальную информацию о работе преподавателя <br> <br>
+                В разделе “Результаты моих учеников” расположен элегантный слайдер, который не только привлекает
+                внимание, но и плавно перелистывается в автоматическом режиме или по вашему желанию <br> <br>
+                Одна из удобных функций сайта — плавная прокрутка к нужному разделу при клике на пункты меню, которое
+                всегда остаётся на виду. Также в интерфейсе реализована анимация элементов при наведении курсора, что
+                делает его интерактивным и приятным для пользователя <br> <br>
+                Не забыли и про адаптивный дизайн, который позволяет удобно просматривать сайт как на компьютере, так и
+                на мобильных устройствах
+              </p>
+              <!-- <h4 class="bottom__text">Сайт доступен по ссылке: clck.ru/3F6VwA</h4> -->
+              <a class="projects__btn" href="https://clck.ru/3F6VwA">Перейти на сайт</a>
+            </div>
+          </div>
+
+          <div class="card__container">
+            <div class="front__card"></div>
+            <div class="back__card">
+              <h4 class="top__text">Сайт <br> для психолога</h4>
+              <p class="projects__about">
+                Сайт состоит из четырех основных разделов: «Обо мне», «Услуги», «Вопросы» и «Дипломы» <br> <br> Блок
+                «Дипломы» оформлен в виде слайдера, что позволяет удобно и быстро просмотреть информацию <br> <br> Блок
+                «Часто задаваемые вопросы» также имеет интерактивный формат — ответы на вопросы раскрываются одним
+                нажатием <br> <br> Интерфейс сайта удобен и интуитивно понятен, а плавный скролл более приятен глазу.
+                каждый раздел доступен как с верхнего, так и с нижнего меню <br> <br> Среди других особенностей —
+                адаптивный дизайн под мобильные и планшетные устройства. По пожеланию заказчика я также сделала
+                возможным его чтение для слабовидящих (при использовании расширения Screen Reader)
+              </p>
+              <a class="projects__btn" href="https://elenashvarts.ru">Перейти на сайт</a>
+            </div>
+          </div>
+
+          <div class="card__container">
+            <div class="front__card"></div>
+            <div class="back__card">
+              <h4 class="top__text">Сайт <br> для преподавателя <br> английского языка</h4>
+              <p class="projects__about">
+                На сайте вы найдёте пять ключевых разделов, среди которых “Обо мне”, “Запросы”, “Образование и опыт”,
+                “Консультации” и “Отзывы”. Каждый из них продуман до мелочей, чтобы дать вам максимальную информацию о
+                работе преподавателя <br> <br>
+                В разделе “Результаты моих учеников” расположен элегантный слайдер, который не только привлекает
+                внимание, но и плавно перелистывается в автоматическом режиме или по вашему желанию <br> <br>
+                Одна из удобных функций сайта — плавная прокрутка к нужному разделу при клике на пункты меню, которое
+                всегда остаётся на виду. Также в интерфейсе реализована анимация элементов при наведении курсора, что
+                делает его интерактивным и приятным для пользователя <br> <br>
+                Не забыли и про адаптивный дизайн, который позволяет удобно просматривать сайт как на компьютере, так и
+                на мобильных устройствах
+              </p>
+              <a class="projects__btn" href="https://clck.ru/3F6VwA">Перейти на сайт</a>
+            </div>
+          </div>
         </div>
+        <p class="projects__instruction">Нажмите на изображение, чтобы узнать больше</p>
       </div>
-      
-      <div class="card__container">
-        <div class="front__card"></div>
-        <div class="back__card">
-          <h4 class="top__text">Сайт <br> для психолога</h4>
-          <p class="projects__about">
-            Сайт состоит из четырех основных разделов: «Обо мне», «Услуги», «Вопросы» и «Дипломы» <br> <br> Блок «Дипломы» оформлен в виде слайдера, что позволяет удобно и быстро просмотреть информацию <br> <br> Блок «Часто задаваемые вопросы» также имеет интерактивный формат — ответы на вопросы раскрываются одним нажатием <br> <br> Интерфейс сайта удобен и интуитивно понятен, а плавный скролл более приятен глазу. каждый раздел доступен как с верхнего, так и с нижнего меню <br> <br> Среди других особенностей — адаптивный дизайн под мобильные и планшетные устройства. По пожеланию заказчика я также сделала возможным его чтение для слабовидящих (при использовании расширения Screen Reader)
-          </p>
-          <a class="projects__btn" href="https://elenashvarts.ru">Перейти на сайт</a>
-        </div>
-      </div>
-      
-      <div class="card__container">
-        <div class="front__card"></div>
-        <div class="back__card">
-          <h4 class="top__text">Сайт <br> для преподавателя <br> английского языка</h4>
-          <p class="projects__about">
-            На сайте вы найдёте пять ключевых разделов, среди которых “Обо мне”, “Запросы”, “Образование и опыт”, “Консультации” и “Отзывы”. Каждый из них продуман до мелочей, чтобы дать вам максимальную информацию о работе преподавателя <br> <br>
-              В разделе “Результаты моих учеников” расположен элегантный слайдер, который не только привлекает внимание, но и плавно перелистывается в автоматическом режиме или по вашему желанию <br> <br>
-              Одна из удобных функций сайта — плавная прокрутка к нужному разделу при клике на пункты меню, которое всегда остаётся на виду. Также в интерфейсе реализована анимация элементов при наведении курсора, что делает его интерактивным и приятным для пользователя <br> <br>
-              Не забыли и про адаптивный дизайн, который позволяет удобно просматривать сайт как на компьютере, так и на мобильных устройствах
-          </p>
-          <a class="projects__btn" href="https://clck.ru/3F6VwA">Перейти на сайт</a>
-        </div>
-      </div>
-    </div>
-    <p class="projects__instruction">Нажмите на изображение, чтобы узнать больше</p>
-  </div>
-</section>
-  <!-- My Projects -->
-<section class="contact" id="contact">
+    </section>
+    <!-- My Projects -->
+    <section class="contact" id="contact">
       <h2 class="contact__h2">Контакты</h2>
       <aside class="contact__sidebar">
         <div class="contact__sidebar-location">
@@ -283,9 +299,12 @@
         <div class="footer__socials">
           <h3>Найти меня в социальных сетях:</h3>
           <div class="footer__socials_icons">
-            <a href="https://t.me/+OKGJ5oHAvbY4Zjg6" target="_blank"><img src="assets/images/ikons/tg.png" alt="icon_tg" class="icons"></a>
-            <a href="https://vk.com/itgirlschool" target="_blank"><img src="assets/images/ikons/vk.png" alt="icon_vk" class="icons"></a>
-            <a href="https://github.com/fauncnka14" target="_blank"><img src="assets/images/ikons/github.png" alt="icon_git" class="icons"></a>
+            <a href="https://t.me/+OKGJ5oHAvbY4Zjg6" target="_blank"><img src="assets/images/ikons/tg.png" alt="icon_tg"
+                class="icons"></a>
+            <a href="https://vk.com/itgirlschool" target="_blank"><img src="assets/images/ikons/vk.png" alt="icon_vk"
+                class="icons"></a>
+            <a href="https://github.com/fauncnka14" target="_blank"><img src="assets/images/ikons/github.png"
+                alt="icon_git" class="icons"></a>
           </div>
         </div>
         <div class="footer__info">
