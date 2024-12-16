@@ -138,10 +138,8 @@
 
 @media screen and (width <=1280px) {
   #cards__container {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
+    flex-flow: column nowrap;
+    place-content: center center;
     height: clamp(93.75rem, 88.254rem + 73.276vw, 146.875rem);
     width: clamp(12.5rem, 8.621rem + 51.724vw, 50rem);
   }
