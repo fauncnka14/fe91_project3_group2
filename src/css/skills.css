@@ -17,17 +17,17 @@
   font-size: 1.2 rem;
 }
 
-/*.hard-wrapper {
+/* .hard-wrapper {
   max-width: 70%;
   margin: 0 auto;
-}*/
+} */
 
-/*.skills-cards {
+/* .skills-cards {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   margin-bottom: 2.5rem;
-}*/
+} */
 
 .skills-wrapper {
   display: flex;
@@ -166,11 +166,13 @@
 
 .chart-container {
   max-width: 19rem;
-  /*display: flex;
-  flex-direction: column;*/
+
+  /* display: flex;
+  flex-direction: column; */
   gap: 15px;
   align-content: center;
-  /*margin: 0 auto;*/
+
+  /* margin: 0 auto; */
 }
 
 canvas {
@@ -181,22 +183,26 @@ canvas {
   border-radius: 20px; /* Закруглённые углы для красоты */
 }
 
-/*media for skills*/
-@media (min-width: 769px) and (max-width: 1023px) {
+/* media for skills */
+@media (width >= 769px) and (width <= 1023px) {
   .skills-wrapper {
     display: block;
   }
+
   .hard-wrapper {
     max-width: 30rem;
     margin: 0 auto;
   }
+
   .chart-container {
     max-width: 19rem;
     margin: 0 auto;
   }
+
   .skills-h2 {
     font-size: 3rem;
   }
+
   .cards__git,
   .cards__react,
   .cards__js,
@@ -205,27 +211,34 @@ canvas {
     height: 14rem;
     font-size: 1.2rem;
   }
+
   .bar-text {
     font-size: 1rem;
   }
+
   .skills-h3 {
     font-size: 1.1rem;
   }
 }
-@media (max-width: 768px) {
+
+@media (width <= 768px) {
   .skills-wrapper {
     display: block;
   }
+
   .skills-cards1 {
     display: block;
   }
+
   .skills-h2 {
     font-size: 2.5rem;
   }
+
   .skills-h3 {
     font-size: 1rem;
     margin-bottom: 1.1rem;
   }
+
   .cards__git,
   .cards__react,
   .cards__js,
@@ -234,28 +247,35 @@ canvas {
     height: 13rem;
     font-size: 1.1rem;
   }
+
   .cards__git {
     margin: 0 auto;
     margin-bottom: 1rem;
   }
+
   .cards__react {
     margin: 0 auto;
     margin-bottom: 1rem;
   }
+
   .skills-cards2 {
     display: block;
   }
+
   .cards__js {
     margin: 0 auto;
     margin-bottom: 1rem;
   }
+
   .cards__sass {
     margin: 0 auto;
     margin-bottom: 1rem;
   }
+
   .bar-text {
     font-size: 1rem;
   }
+
   .chart-container {
     margin: 0 auto;
   }
