@@ -93,8 +93,12 @@ npm run lint:css:fix
 
 ## Разработчики
 
-**https://t.me/anna_s135** - Project-manager. Блок "Обо мне"
-**https://t.me/miss_Irina1** - Techlead (внедрение новых технологий в проект). Титульный блок
-**https://t.me/yana_naxt** - Блок "Skills"
-**https://t.me/bearcubbb** - Блок "Мои проекты"
-**https://t.me/apanisimova** - Поддержкание git-хранилища проекта. Блок "Контакты"
+**[Анна С.](https://t.me/anna_s135)** - Project-manager. Блок "Обо мне"
+
+**[Ирина](https://t.me/miss_Irina1)** - Techlead (внедрение новых технологий в проект). Титульный блок
+
+**[Яна](https://t.me/yana_naxt)** - Блок "Skills"
+
+**[Алена](https://t.me/bearcubbb)** - Блок "Мои проекты"
+
+**[Анна А.](https://t.me/apanisimova)** - Поддержкание git-хранилища проекта. Блок "Контакты"
